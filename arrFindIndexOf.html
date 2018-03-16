@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	//"use strict";
+
+    	function find (array, value) {
+    		if (array.indexOf) {
+    			return array.indexOf(value);
+    		}
+
+    		for (var i = 0; i < array.length; i++) {
+    			if (arrai[i] === value) return i;
+    		}
+
+    		return -1;
+    	}
+
+    	var array = [15, 24, "text", false, 0];
+        var index = find (array, 0);
+    	alert (index);
+    </script>
+  </body>
+</html>

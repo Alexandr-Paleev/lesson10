@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function truncate(str, maxlength) {
+    		if(str.length > maxlength) {
+    			return str.slice(0, maxlength ) + "...";
+    		}
+    		return str;
+    	}
+
+    	alert(truncate("I am living in Kharkov", 15));
+    	alert(truncate("i amprogrammer", 15));
+    </script>
+  </body>
+</html>

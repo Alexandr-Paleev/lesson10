@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function chakAge (age) {
+    		if ( age > 18) {
+    			return true;
+    		} else {
+    			return confirm ( "Parents ok?");
+    		}
+
+    	}	
+
+    		var age = prompt ("How old are you?");
+
+            if (chakAge (age)) {
+            	alert ("Enter yes!");
+            } else {
+            	alert ("Enter no!");
+            }
+    		
+        </script>
+  </body>
+</html>

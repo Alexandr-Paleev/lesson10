@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function addClass (obj, cls) {
+           var classes = obj.className ? obj.className.split(" ") : [];
+
+           for (var i = 0; i < classes.length; i++) {
+           	if (classes[i] == cls) return;
+           }
+           classes.push(cls);
+           obj.className = classes.join(", ");
+    	}
+
+    	var obj = {
+    		className: "open menu"
+    	};
+
+    	addClass(obj, 'new');
+        addClass(obj, 'open');
+        addClass(obj, 'me');
+        alert(obj.className)
+    </script>
+  </body>
+</html>

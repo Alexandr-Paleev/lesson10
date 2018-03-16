@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function checkSpam(str) {
+    		var lower = str.toLowerCase();
+		return !!(~lower.indexOf("viagra") || ~lower.indexOf("xxx"));
+			
+				    		
+    	}
+
+    	alert (checkSpam("ViAgra"));
+    	alert (checkSpam("xXxX"));
+    	alert (checkSpam("heloow"));
+		
+    </script>
+  </body>
+</html>
