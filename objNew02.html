@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function User(firstName, lastName){
+    		var phrase = "Hello";
+
+    		function getFullName(){
+    			return firstName + " " + lastName;
+    		}
+
+    		this.sayHello = function(){
+    			alert(phrase + " , " + getFullName());
+    		}
+    	}
+    	var a = new User("Ivan","Petrovich");
+    	a.sayHello();
+    	alert(User(firstName, lastName));
+    </script>
+  </body>
+</html>

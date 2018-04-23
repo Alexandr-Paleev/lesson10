@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+        var user = {
+            firstName: "Vasya",
+            surname: "Petrov",
+
+            get fullName(){
+                return this.firstName + " " + this.surname;
+            },
+
+            set fullName(value){
+                var split = value.split(" ");
+                this.firstName = split[0];
+                this.surname = split[1];
+            }
+        };
+        alert(user.fullName);
+        user.fullName = "Petya Ivanov";
+        alert(user.firstName);
+        alert(user.surname);
+    </script>
+  </body>
+</html>

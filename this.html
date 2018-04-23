@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	var user = { name: "Petya"};
+    	var admin = { name: "Anya"};
+
+    	function func(){
+    		alert(this.name);
+    	}
+
+    	user.f = func;
+    	admin.x = func;
+
+    	user.f();
+    	admin.x();
+    	admin["x"]();
+    </script>
+  </body>
+</html>

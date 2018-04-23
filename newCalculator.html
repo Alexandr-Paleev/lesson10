@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function Calculator(){
+    		this.read = function(){
+    			this.a = +prompt("Enter a", 0);
+    			this.b = +prompt("Enter b", 0);
+
+    			
+    		}
+    		//var a = +prompt("Enter a?", 0);
+    		//var b = +prompt("Enter b?", 0);
+
+    		this.sum = function(){
+    			return this.a + this.b;
+    		}
+
+    		this.mul = function(){
+    			return this.a * this.b;
+    		}
+
+    		this.see = function(){
+    			return this.a;
+            }
+
+            this.se = function(){
+                return this.b;
+            }
+    		
+    	}
+
+    	var calc = new Calculator;
+    	calc.read();
+    	alert("addition=" + calc.sum());
+    	alert("multiplication=" + calc.mul());
+    	alert("a=" + calc.see());
+    	alert("b=" + calc.se());
+    </script>
+  </body>
+</html>

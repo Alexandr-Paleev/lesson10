@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+        var user = {
+            firstName: "Vasya",
+            surname: "Ivanov"
+        };        
+
+        Object.defineProperty(user, "fullName", {
+            
+            get: function(){
+                return this.firstName + " " + this.surname;
+            },
+
+            set: function(value){
+                var split = value.split(" ");
+                this.firstName = split[0];
+                this.surname = split[1];
+            }
+
+            });
+        user.fullName = "Petya Petrov";
+
+        alert(user.fullName);       
+               
+    </script>
+  </body>
+</html>

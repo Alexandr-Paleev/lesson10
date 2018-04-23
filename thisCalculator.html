@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	var calculator = {
+
+            read: function(){
+                this.a = +prompt("Enter number a", "");
+                this.b = +prompt("Enter number b", "");
+            },
+    		    		
+    		sum: function(){
+    			return this.a + this.b;
+    		},
+
+    		mul: function(){
+    			return this.a * this.b;
+    		}
+            
+    	}
+    	calculator.read();
+    	alert(calculator.sum());
+    	alert(calculator.mul());
+    </script>
+  </body>
+</html>

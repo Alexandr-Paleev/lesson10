@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>        
+       function User(fullName){
+          this.fullName = fullName;
+          
+          Object.defineProperty(this, {
+
+            firstName: {
+                value: "Vasya"
+            },
+
+            lastName: {
+                value: "Pupkin"
+            },
+                        
+            /*set: function(value){
+                var split = value.split(" ");
+                this.firstName = [0];
+                this.lastName = [1];
+            }*/
+          });
+       }
+       var vasya = new User("Vasya Pupkin");
+       alert(vasya.firstName);
+       alert(vasya.lastName);
+       vasya.lastName = "Ivanov";
+       alert(vasya.fullName);
+    </script>
+  </body>
+</html>

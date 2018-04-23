@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	var a = 1;
+
+    	function getFunc () {
+    		var a = 2;
+
+    		var func = new Function ("alert (a)"); {
+    			//alert (a);
+    		}
+    		return func;
+    	}
+    	getFunc()();
+    	
+
+    </script>
+  </body>
+</html>

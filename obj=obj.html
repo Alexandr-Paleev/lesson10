@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	var obj = {};
+
+    	function A(){return obj}
+
+    	function B(){return obj}
+    	
+    	var a = new A;
+    	var b = new B;
+
+    	alert( a == b);
+    </script>
+  </body>
+</html>

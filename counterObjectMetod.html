@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function counter(){
+    		var start = 1;
+    	
+    	return {
+    		getNext: function(){
+    			return start++;
+    		},
+
+    		set: function(value){
+    			start = value;
+    		},
+
+    		reset: function(){
+    			start = 1;
+    		}
+    	}
+    }
+    var count = counter();
+
+    alert(count.getNext());
+    alert(count.getNext());
+    alert(count.getNext());
+
+    count.set(7);
+    alert(count.getNext());
+    alert(count.getNext());
+    alert(count.getNext());
+
+    count.reset();
+    alert(count.getNext());
+    alert(count.getNext());
+    alert(count.getNext());
+    </script>
+  </body>
+</html>

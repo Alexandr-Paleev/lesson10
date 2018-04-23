@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <script>
+    	function makeBuffer () {  
+    		var buf = "";
+
+    		function buffer (value) {
+    			if (arguments.length == 0) {
+    				return buf;
+    			}
+    			buf += value;
+    		};   		
+    		
+    		buffer.clear = function () {
+    			buf = '';
+    		}
+    		return buffer;
+    	}
+    	var buffer = makeBuffer ();
+
+    	buffer ("Sasha");
+    	buffer ("Love");
+    	buffer ("Natasha");
+    	alert (buffer ());
+
+    	buffer.clear();
+    	alert (buffer ());
+
+    	var buffer2 = makeBuffer ();
+    	buffer2 (10);
+    	buffer2 (10);
+    	buffer2 (10);
+    	alert (buffer2());
+    </script>
+  </body>
+</html>
